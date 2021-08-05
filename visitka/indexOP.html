@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>naaZzz - Начинающий разработчик</title>
+</head>
+<body class="page light-theme">
+    <header class="header-s">
+        <a href="./index.html" class="atop">naaZzz</a>
+        <h1></h1>
+        <button class="spanTem header-s theme-button" type="button">Изменить тему</button>
+        <a href="./indexOM.html" class="spanW header-s">Почему я?</a>
+        <a href="./indexOP.html" class="spanPr header-s">Цены</a>
+        <div class="dropdown spanlanguage">
+            <div class="dropbtn">RU</div>
+            <div class="dropdown-content">
+                <a href="#">RU</a>
+                <a href="#">USA</a>
+            </div>
+        </div>
+        <a href="#" class="spanlanguage header-s">Language</a>
+        <span class="lan"></span>
+        <span class="line"></span>
+        <span class="line line2"></span>
+        <span class="line3"></span>
+        <span class="line3 line4"></span>
+        <img class="priceP" src="file:///C:\Users\artem\Desktop\visitka\img\price-tag.svg" />
+    </header>
+    <section class="stage">
+        <figure class="ball">
+            <span class="shadow"></span>
+            <span class="iris"></span>
+        </figure>
+    </section>
+    <section class="contacts styleTab">
+        <h1>Прайс-лист на услуги разработки</h1>
+        <div class="mg" id="list">
+            <input class="search mg" placeholder="Поиск" />
+            <button class="sort mg" data-sort="name">
+                Сортировка по алфавиту
+            </button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Цена (в рублях)</th>
+                    </tr>
+                </thead>
+                <tbody class="list">
+                    <tr>
+                        <td class="name zag1">Разработка полностью функционирующего сайта</td>
+                        <td class="price mg1 zag1">10000</td>
+                    </tr>
+                    <tr>
+                        <td class="name zag1">Разработка С++, Java приложения</td>
+                        <td class="price mg1 zag1">15000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button class="button24" onclick="swad()" type="button">Оставить запрос</button>
+        <div id="overlay-1">
+            <div class="popup">
+                <button class="close" title="Закрыть окно" onclick="swa2d()"></button>
+                <p class="zag1">Оставьте свои контактные данные</p>
+                <p>Введите ваше имя</p>
+                <input type="text" name="firstName" required />
+                <p>Введите вашу фамилию</p>
+                <input type="text" name="pastName" required />
+                <p>Введите вашу отчество(при наличии)</p>
+                <input type="text" name="nextName" />
+                <p>Введите ваш номер телефона</p>
+                <input type="tel" name="tel" value="8-800-555-35-35" min="7" max="15" maxlength="15" required />
+                <p>Введите ваш email адрес</p>
+                <input type="email" name="email" required />
+                <p class="zag1"></p>
+                <input name="send_button" type="submit" value="Отправить данные" />
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <h3>Контакты для связи</h3>
+        <p class="pcont">Артём</p>
+        <p class="pcont"><i>email:</i> <a href="font-weight:bold;">artem_berezhnov@mail.ru</a></p>
+        <p class="pcont"><i>телефон:</i> <a href="font-weight:bold;">+7-908-172-00-43</a></p>
+    </section>
+    <footer class=" page-footer">
+        <div class="container">
+            <span>© naaZzz</span>
+            <span class="container container1">2021</span>
+        </div>
+    </footer>
+    <script src="scriptTheme.js"></script>
+    <script src="list.js"></script>
+    <script>
+        var options = {
+            valueNames: ['name', 'price'] //должны совпадать с классами элементов td
+        };
+        var itemList = new List('list', options);//первое значение должно совпадать с именем класса элемента tbody
+    </script>
+    <script src="scriptWind.js"></script>
+</body>
+</html>

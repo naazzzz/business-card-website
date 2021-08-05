@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>naaZzz - Начинающий разработчик</title>
+</head>
+<body class="page light-theme">
+            <header class="header-s">
+                <a href="./index.html" class="atop">naaZzz</a>
+                <h1></h1>
+                <button class="spanTem header-s theme-button" type="button">Изменить тему</button>
+                <a href="./indexOM.html" class="spanW header-s">Почему я?</a>
+                <a href="./indexOP.html" class="spanPr header-s">Цены</a>
+                <div class="dropdown spanlanguage">
+                    <div class="dropbtn">RU</div>
+                    <div class="dropdown-content">
+                        <a href="#">RU</a>
+                        <a href="#">USA</a>
+                    </div>
+                </div>
+                <span class="lan"></span>
+                <span class="line"></span>
+                <span class="line line2"></span>
+                <span class="line3"></span>
+                <span class="line3 line4"></span>
+                <img class="priceP" src="file:///C:\Users\artem\Desktop\visitka\img\price-tag.svg" />
+            </header>
+            <section class="stage">
+                <figure class="ball">
+                    <span class="shadow"></span>
+                    <span class="iris"></span>
+                </figure>
+            </section>
+            <section class="main">
+                <h2>Начинающий разработчик</h2>
+                <p class="pcont">Создаю все своими руками</p>
+                <button class="button24" onclick="swab()" type="button">Смотреть видео</button>
+                <div id="overlay">
+                    <div class="popup">
+                        <button class="close" title="Закрыть окно" onclick="swa2b()"></button>
+                        <p class="zag">Видео разработки</p>
+                        <video class="modVid" controls="controls" poster="./img/posterVid.jpg">
+                            <source src="./video/intro_movie.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        </video>
+                    </div>
+                </div>
+                <div class="sim-slider poss">
+                    <ul class="sim-slider-list">
+                        <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li> <!-- это экран -->
+                        <li class="sim-slider-element"><img src="./img/1.jpg" alt="0"></li>
+                        <li class="sim-slider-element"><img src="./img/2.jpg" alt="1"></li>
+                        <li class="sim-slider-element"><img src="./img/3.jpg" alt="2"></li>
+                    </ul>
+                    <div class="sim-slider-arrow-left"></div>
+                    <div class="sim-slider-arrow-right"></div>
+                    <div class="sim-slider-dots"></div>
+                </div>
+            </section>
+            <section class="contacts">
+                <h3>Контакты для связи</h3>
+                <p class="pcont">Артём</p>
+                <p class="pcont"><i>email:</i> <a href="font-weight:bold;">artem_berezhnov@mail.ru</a></p>
+                <p class="pcont"><i>телефон:</i> <a href="font-weight:bold;">+7-908-172-00-43</a></p>
+            </section>
+            <footer class=" page-footer">
+                <div class="container">
+                    <span>© naaZzz</span>
+                    <span class="container container1">2021</span>
+                </div>
+
+            </footer>
+    <script src="script.js"></script>
+    <script src="scriptTheme.js"></script>
+    <script src="scriptWind.js"></script>
+    <script src="scriptTranslations.js"></script>
+
+</body>
+</html>
